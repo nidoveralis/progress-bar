@@ -1,0 +1,110 @@
+@import url('./vendor/fonts/fonts.css');
+body{
+  font-family: 'Elevation', Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.section {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  width: fit-content;
+  align-self: center;
+}
+
+.normal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.normal__input {
+  padding: 7px;
+  width: 40px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 16px;
+  border: #000 solid 1px;
+  text-align: center;
+}
+
+.normal__input:focus {
+  outline-color: #000;
+}
+
+.input__title {
+  font-size: 18px;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.switch__label {
+  cursor: pointer;
+}
+
+.switch__input {
+  display: none;
+}
+
+.switch__span {
+  display: block;
+  width: 54px;
+  height: 34px;
+  background-color: #008cff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: relative;
+}
+
+.switch__span::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #fff;
+  top: 4px;
+  left: 3px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.switch__input:checked + .switch__span::before {
+  right: 3px;
+  left: auto;
+}

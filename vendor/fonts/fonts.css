@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Elevation';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./elevation-normal.woff2') format('woff2'),
+    url('./elevation-normal.woff') format('woff');
+}
